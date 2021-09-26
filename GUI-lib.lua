@@ -3,6 +3,6 @@ local term=require("term")
 
 local gui={}
 
-function g.test()
+function gui.test()
   print("THIS IS A TEST")
 end
