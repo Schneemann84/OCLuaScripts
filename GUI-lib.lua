@@ -1,10 +1,18 @@
 local component=require("component")
 local term=require("term")
+local color=require("color")
 
 local gui={}
 
-function gui.test()
-  print("THIS IS A TEST")
+local windows = {
+  ["exampleWindow"] = {
+        {id = 0, active = false, width = 40, height = 90, locx = 1, locy = 1, backColor = 15, foreColor = 7}
+        ["exampleButton"] = {id = 0, func = (function() print("this is an example button"), width = 10, height = 3, locx = 3, locy = 5, text = "click", position = "centered"}
+    }
+}
+
+function gui.createWindow(name,width,height,locx,locy,backColor,foreColor)
+  
 end
 
 return gui
