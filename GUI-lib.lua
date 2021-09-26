@@ -6,3 +6,5 @@ local gui={}
 function gui.test()
   print("THIS IS A TEST")
 end
+
+return gui
