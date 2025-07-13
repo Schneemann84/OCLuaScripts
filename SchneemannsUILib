@@ -1,0 +1,12 @@
+local component = require("component")
+local gpu = component.gpu
+
+--Progress Bar: x,y defines the origin expanding down and to the right
+-- w,h defines width and height
+-- o defines the orientation, either vertical or horizontal
+-- color defines the bars color
+
+function progressBar(x,y,w,h,o,color)
+	
+	gpu.fill(x,y,w,h)
+end
